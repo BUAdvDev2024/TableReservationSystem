@@ -16,6 +16,7 @@
 </ul>
 <br>
 <h1>Data Flow Diagram</h1>
+![Data Flow Diagram](https://github.com/user-attachments/assets/f16cc624-e9f7-4f45-93b1-929111a48f51)
 <h4>Below signifies four distinct processes our application will take when dealing with bookings</h4>
 <p>We have labelled four proccesses instead of a actual text description as the diagram depicts how the majority of the system will process requests from the user</p>
 <ul>
@@ -27,7 +28,7 @@
 </ul>
 <ul>
   <h4>Process 2)</h4>
-  <li>Based on 1a,1b,1c and 1d, the users request is sent to the api</li>
+  <li>Based on 1a,1b,1c and 1d, the users request is sent to the API</li>
 </ul>
 <ul>
   <h4>Process 3)</h4>
