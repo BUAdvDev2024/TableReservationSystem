@@ -37,7 +37,7 @@ def reserve_table():
     if existing_booking:
         return jsonify({"message": "This table is already reserved with the same details.", "status": "error"}), 400
 
-    # Check for existing bookings for the same date and time
+    # Check availability before allowing reservation
     count = sum(1 for booking in bookings if booking['date'] == data['date'] and booking['time'] == data['time'])
 
     # Limit to 20 bookings per date and time
@@ -65,23 +65,6 @@ def reserve_table():
     print(f"Customer Phone: {booking['customer_phone']}")
     
     return jsonify({"message": "Table reserved", "status": "success", "booking": booking})
-
-
-# Route for checking availability
-@app.route('/availability', methods=['POST'])
-def check_availability():
-    data = request.get_json()
-    
-    if not data or 'date' not in data or 'time' not in data:
-        return jsonify({"message": "Invalid input", "status": "error"}), 400
-
-    # Check for existing bookings
-    count = sum(1 for booking in bookings if booking['date'] == data['date'] and booking['time'] == data['time'])
-
-    if count >= 2:
-        return jsonify({"available": False})
-
-    return jsonify({"available": True})
 
 if __name__ == "__main__":
     app.run(debug=True)
