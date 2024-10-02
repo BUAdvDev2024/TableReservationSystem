@@ -16,6 +16,16 @@
 </ul>
 <br>
 <h1>Data Flow Diagram</h1>
+<h4>Below signifies four distinct processes our application will take when dealing with bookings</h4>
+<p>We have labelled four proccesses instead of a actual text description as the diagram depicts how the majority of the system will process requests from the user</p>
+<ul>
+  <b>Process 1)</b>
+  <li>1a) User inputs details to make a reservation</li>
+  <li>1b) User modifies an existing reservation to select a different date and time</li>
+  <li>1c) User deletes an reservation</li>
+  <li>1d) User is put into a waiting list until a reservation becomes free</li>
+</ul>
+![image](https://github.com/user-attachments/assets/de2377b7-80ec-4007-91e8-c59e1ab3cb4e)
 <br>
 <h1>Entity Relationship</h1>
 
