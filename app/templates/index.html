@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/booking.js') }}"></script>
+</head>
+<body class="main container">
+    <h1>Welcome to the South Coast Pizza!</h1>
+    <h2>Make a Table Reservation</h2>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+
+        <label>{{ form.date.label }}:</label>
+        {{ form.date() }}
+        <br>
+
+        <label>{{ form.time.label }}:</label>
+        {{ form.time() }}
+        <br>
+
+        <label>{{ form.party_size.label }}:</label>
+        {{ form.party_size() }}
+        <br>
+
+        <label>{{ form.customer_name.label }}:</label>
+        {{ form.customer_name() }}
+        <br>
+
+        <label>{{ form.customer_phone.label }}:</label>
+        {{ form.customer_phone() }}
+        <br>
+
+        {{ form.submit() }}
+    </form>
+    <div id="responseMessage"></div>
+</body>
+</html>
