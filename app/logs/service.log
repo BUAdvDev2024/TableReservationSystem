@@ -1,0 +1,266 @@
+2024-10-02 16:28:31,657 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-02 16:28:31,657 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 16:28:31,662 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 16:28:33,072 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 16:28:33,108 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 16:29:19,905 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 16:29:19,905 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 16:29:19,909 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 16:29:21,501 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 16:29:21,508 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 16:29:22,949 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 16:29:22] "GET / HTTP/1.1" 200 -
+2024-10-02 16:29:23,122 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 16:29:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-10-02 16:29:23,130 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 16:29:23] "GET /static/js/booking.js HTTP/1.1" 200 -
+2024-10-02 16:29:24,660 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 16:29:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-02 17:52:54,474 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:52:54,475 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:52:54,477 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:52:55,437 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 17:52:55,444 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 17:53:54,275 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:53:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-02 17:53:54,401 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:53:54] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-02 17:53:54,402 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:53:54] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-02 17:53:55,225 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:53:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:53:55,419 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:53:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:54:48,104 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:54:48,104 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:54:48,106 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:54:49,142 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 17:54:49,147 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 17:54:59,459 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:54:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-02 17:54:59,547 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-02 17:54:59,552 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-02 17:54:59,757 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:54:59,807 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:55:08,002 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:55:08,002 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:55:08,003 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:55:09,105 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 17:55:09,110 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 17:55:10,407 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-02 17:55:10,493 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-02 17:55:10,498 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-02 17:55:10,686 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:55:10,744 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:55:24,641 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:55:24,641 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:55:24,649 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:55:35,084 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:55:35,085 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:55:35,088 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:55:44,333 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:55:44,333 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:55:44,334 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:55:45,241 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 17:55:45,245 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 17:55:51,134 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-02 17:55:51,221 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-02 17:55:51,226 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-02 17:55:51,432 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:55:51,499 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:55:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-02 17:56:17,045 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:56:17,045 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:56:17,047 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:56:18,167 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 17:56:18,176 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 17:56:19,629 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:19] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-02 17:56:24,532 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:24] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-02 17:56:32,264 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:32] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-02 17:56:42,613 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:42] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-02 17:56:43,649 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-02 17:56:59,006 ERROR werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:59] code 400, message Bad request version ('îµok\x97×º:À\x84')
+2024-10-02 17:56:59,006 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:59] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ÂÒd%\x94O\x1c\x19¦\x8bêP$Ë¶G\x0dîGO\x91ÈûY(\x8b)\x9e«¸!± \x7f>\x99¬±ðE\x96oO\x9b\x9bÊ\x1cîµok\x97×º:À\x84[0m" 400 -
+2024-10-02 17:56:59,007 ERROR werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:59] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+2024-10-02 17:56:59,007 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:56:59] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03Q)ã>\x04\x9fÓ\x04_Á\x84\x07ü}ÉìÕ½ÛµÒ¦\x0cRÚ ²ÈRàÝ0 1*tnõ*v:c\x85\x9e\x98/µçï¬n\x96Ü\x0bó\x94h \x930\x8b)rÎ\x94\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s[0m" 400 -
+2024-10-02 17:57:04,706 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [02/Oct/2024 17:57:04] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-02 17:57:19,784 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\routes.py', reloading
+2024-10-02 17:57:19,961 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:57:21,011 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-02 17:57:21,016 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-02 17:57:42,213 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:57:42,214 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:57:42,217 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-02 17:58:13,887 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-02 17:58:13,888 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-02 17:58:13,891 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:03:25,685 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:03:25,686 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:03:25,688 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:03:26,629 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:03:26,634 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:03:30,827 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:03:30] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-03 15:03:31,956 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:03:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-03 15:05:57,982 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:05:57,982 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:05:57,983 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:05:58,910 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:05:58,917 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:06:02,909 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:06:02] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-03 15:06:14,558 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:06:14,558 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:06:14,560 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:06:15,494 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:06:15,498 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:06:15,517 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:06:15] "[33mGET / HTTP/1.1[0m" 404 -
+2024-10-03 15:06:19,023 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:06:19] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:06:35,460 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:06:35,461 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:06:35,462 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:06:36,413 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:06:36,417 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:06:36,987 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:06:36] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:06:46,114 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:06:46] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:06:55,431 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:06:55] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:07:43,983 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:07:43,983 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:07:43,985 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:07:44,908 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:07:44,913 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:07:48,188 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:07:48] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:08:28,882 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:08:28,882 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:08:28,884 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:08:29,830 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:08:29,835 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:08:46,377 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:08:46] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:09:06,597 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:09:06,597 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:09:06,600 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:09:07,629 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:09:07,634 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:09:07,798 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:09:07] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:11:17,188 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:11:17,188 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:11:17,190 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:11:18,200 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:11:18,205 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:11:19,887 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:11:19] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:11:42,769 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:11:42,769 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:11:42,770 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:11:43,704 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:11:43,709 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:11:43,881 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:11:43] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:11:57,808 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:11:57,808 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:11:57,810 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:11:58,867 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:11:58,872 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:12:00,374 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:12:00] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:13:09,358 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:13:09,358 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:13:09,360 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:13:10,306 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:13:10,311 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:13:11,781 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:13:11] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:13:26,703 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:13:26,703 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:13:26,704 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:13:27,658 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:13:27,662 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:13:27,679 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:13:27] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:14:33,331 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:14:33,331 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:14:33,332 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:14:34,243 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:14:34,248 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:14:37,812 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:14:37] "[31m[1mGET /home HTTP/1.1[0m" 405 -
+2024-10-03 15:17:59,167 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:17:59,167 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:17:59,168 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:18:00,127 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:18:00,133 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:18:04,577 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:04] "[31m[1mGET / HTTP/1.1[0m" 405 -
+2024-10-03 15:18:23,432 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:18:23,432 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:18:23,434 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:18:24,509 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:18:24,514 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:18:26,415 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:26] "GET / HTTP/1.1" 200 -
+2024-10-03 15:18:26,541 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:26] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-10-03 15:18:26,550 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:26] "GET /static/js/booking.js HTTP/1.1" 200 -
+2024-10-03 15:18:43,923 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:18:43,923 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:18:43,925 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:18:44,956 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:18:44,961 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:18:45,609 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:45] "GET / HTTP/1.1" 200 -
+2024-10-03 15:18:45,717 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-03 15:18:45,721 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:18:45] "[36mGET /static/js/booking.js HTTP/1.1[0m" 304 -
+2024-10-03 15:20:05,902 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:20:05,902 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:20:05,904 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:20:06,844 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:20:06,849 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:20:16,120 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:20:16,121 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:20:16,125 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:20:29,536 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:20:29,537 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:20:29,540 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:22:31,384 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:22:31,386 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:22:31,393 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:23:32,950 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:23:32,950 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:23:32,951 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:23:33,878 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:23:33,883 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:23:38,324 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:23:38,325 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:23:38,328 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:26:39,797 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:26:39,798 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:26:39,801 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:27:59,610 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-03 15:27:59,611 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-03 15:27:59,616 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-03 15:28:03,171 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-03 15:28:03,182 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-03 15:28:09,007 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:28:09] "GET / HTTP/1.1" 200 -
+2024-10-03 15:28:09,139 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:28:09] "[36mGET /static/js/booking.js HTTP/1.1[0m" 304 -
+2024-10-03 15:28:09,141 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:28:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-03 15:28:09,222 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:28:09] "GET / HTTP/1.1" 200 -
+2024-10-03 15:28:09,860 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:28:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-03 15:28:09,866 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [03/Oct/2024 15:28:09] "[36mGET /static/js/booking.js HTTP/1.1[0m" 304 -
+2024-10-15 16:39:39,962 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-15 16:39:39,963 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-15 16:39:39,966 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-15 16:39:41,545 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-15 16:39:41,554 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
