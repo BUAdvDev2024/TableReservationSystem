@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, redirect, url_for, render_template, flash
 from app import app
-from app.models import Booking_slots, bookings, Seating, add_booking
+from app.models import Booking_slots, bookings, Seating, add_booking, Restaurant
 from app.forms import ReservationForm
 
 
@@ -9,6 +9,7 @@ from app.forms import ReservationForm
 def home():
 
     form = ReservationForm()
+    form.location.choices = Restaurant.query.order_by(Restaurant.id)
     if form.validate_on_submit():
         # Form was successfully submitted and validated
         date = form.date.data

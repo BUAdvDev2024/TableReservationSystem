@@ -264,3 +264,38 @@
 2024-10-15 16:39:39,966 INFO werkzeug MainThread :  * Restarting with stat
 2024-10-15 16:39:41,545 WARNING werkzeug MainThread :  * Debugger is active!
 2024-10-15 16:39:41,554 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-15 16:42:36,539 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-10-15 16:42:36,540 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-15 16:42:36,542 INFO werkzeug MainThread :  * Restarting with stat
+2024-10-15 16:42:38,935 WARNING werkzeug MainThread :  * Debugger is active!
+2024-10-15 16:42:38,958 INFO werkzeug MainThread :  * Debugger PIN: 101-633-843
+2024-10-15 16:42:56,039 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:42:56] "GET / HTTP/1.1" 200 -
+2024-10-15 16:42:56,253 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:42:56] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-10-15 16:42:56,261 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:42:56] "GET /static/js/booking.js HTTP/1.1" 200 -
+2024-10-15 16:42:57,814 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:42:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-15 16:43:12,757 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:43:12] "POST / HTTP/1.1" 200 -
+2024-10-15 16:43:12,783 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:43:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-15 16:43:12,784 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Oct/2024 16:43:12] "[36mGET /static/js/booking.js HTTP/1.1[0m" 304 -
+2024-10-16 14:34:52,714 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:38:43,984 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:39:29,326 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:40:23,634 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:42:26,259 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:43:05,587 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:43:54,720 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:44:54,774 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 14:46:23,536 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-16 15:27:25,169 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\app\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:31:39,469 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:32:10,382 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:50:25,924 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:50:39,510 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:50:47,776 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:50:59,517 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:51:05,414 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:52:09,413 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:52:22,040 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:52:27,629 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:52:32,585 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-17 14:53:14,953 ERROR flask_migrate MainThread : Error: Path doesn't exist: 'C:\\Users\\Fernando\\PycharmProjects\\TableReservationSystem\\migrations'.  Please use the 'init' command to create a new scripts folder.
