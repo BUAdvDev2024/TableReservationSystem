@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from flask import Flask, request, g, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -26,13 +25,13 @@ migrate = Migrate(app, db)
 admin = Admin(app, name='TableReservationSystem', template_mode='bootstrap4')
 #Admin views go here 
 
-from app.models import Seating, Booking_slots #, bookings
+from app.models import Seating, Booking_slots, bookings
 # Add model views here
 
 # Add the models to the admin interface
 admin.add_view(ModelView(Seating, db.session))
 admin.add_view(ModelView(Booking_slots, db.session))
-#admin.add_view(ModelView(bookings, db.session))
+admin.add_view(ModelView(bookings, db.session))
 
 
 if not os.path.exists(os.path.join(basedir, 'app.db')):
