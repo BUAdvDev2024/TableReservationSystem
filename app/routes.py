@@ -4,12 +4,16 @@ from app.models import Booking_slots, bookings, Seating, add_booking, Restaurant
 from app.forms import ReservationForm
 
 
-# Route for reserving a table
-@app.route('/', methods=['GET', 'POST'])
+@app.route("/")
 def home():
 
+    return render_template('base.html')
+
+# Route for reserving a table
+@app.route('/reserve', methods=['GET', 'POST'])
+def reserve():
+
     form = ReservationForm()
-    form.location.choices = Restaurant.query.order_by(Restaurant.id)
     if form.validate_on_submit():
         # Form was successfully submitted and validated
         date = form.date.data
@@ -24,4 +28,4 @@ def home():
         # Flash a success message and redirect to a success page
         flash(f"Reservation made for {customer_name} at {time} on {date} for {party_size} people.", "success")
 
-    return render_template('index.html', form=form)
+    return render_template('reservation.html', form=form)
