@@ -25,13 +25,14 @@ migrate = Migrate(app, db)
 admin = Admin(app, name='TableReservationSystem', template_mode='bootstrap4')
 #Admin views go here 
 
-from app.models import Seating, Booking_slots, bookings
+from app.models import Seating, Booking_slots, bookings, Restaurant
 # Add model views here
 
 # Add the models to the admin interface
 admin.add_view(ModelView(Seating, db.session))
 admin.add_view(ModelView(Booking_slots, db.session))
 admin.add_view(ModelView(bookings, db.session))
+admin.add_view(ModelView(Restaurant, db.session))
 
 
 if not os.path.exists(os.path.join(basedir, 'app.db')):
