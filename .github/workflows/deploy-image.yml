@@ -1,0 +1,63 @@
+name: Create and publish Docker Image
+
+on:
+  workflow_dispatch: # We allow manually initialising the action from the github UI
+  push:
+    branches:
+      - 'master' # Anytime master is pushed to
+      - 'main' # Any time main is pushed to
+    tags:
+      - 'v*' # Any tag starting with a v (a version tag)
+
+env:
+  REGISTRY: ghcr.io # Use the github container registry (for organization private accounts)
+
+# Use a hardcoded name, but the github repository name is a good way as well
+  # IMAGE_NAME: ${{github.organization}}/myImageName
+  IMAGE_NAME: ${{ github.repository }}-web # In this case the image is called ktor-sample-web (as it is the web submodule)
+
+jobs: # This is the actual work
+  build-and-push-image: # In this case we just build and push.
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read # We need to read the repository
+      packages: write # And we need to write to the packages
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Check out the code from git(hub)
+
+      - name: Set up Docker Buildx # This is recommended for speed/caching
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to the container registry
+        uses: docker/login-action@v3 # Log in to the container registry
+        with:
+          registry: ${{ env.REGISTRY }} # Uses the defined registry from above
+          username: ${{ github.actor }} # Use the github actor as username
+          password: ${{ secrets.GITHUB_TOKEN }} # Use the automatically provided github token
+
+      # Note that we use semver for tags, this requires a three-part version: semver.org
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5 # This action will set the docker information for our images based on github info.
+        with:
+          images: ${{ env.REGISTRY }}/${{ contains(env.IMAGE_NAME, '/') && env.IMAGE_NAME || join (github.repository_owner, env.IMAGE_NAME) }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+
+      # We don't need Java/gradle actions here as docker will build correctly using a build container.
+      # If you need to "manually" build your system, you would put those steps in here.
+
+      # Now we are back to create the docker image
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5 # This action will automatically build (and push) the image.
+        with:
+          context: . # This means it is for the docker image in the root of the repository. If in a subdirectory, use that as context.
+          push: ${{ github.event_name != 'pull_request' }} # for safety
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
