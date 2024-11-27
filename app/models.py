@@ -60,7 +60,23 @@ class bookings(db.Model):
 
     def __repr__(self):
         return f'<Booking: Seating ID {self.seating_id}, Slot ID {self.booking_slots_id}>'
-
+    
+    
+class WaitingList(db.Model):
+    __tablename__ = 'waiting_list'
+    
+    id = db.Column(db.Integer, primary_key=True)
+    customer_name = db.Column(db.String(100), nullable=False)
+    customer_number = db.Column(db.String(20), nullable=False)
+    seating_id = db.Column(db.Integer, db.ForeignKey('seating.id', name='fk_waitinglist_seating_id'))
+    booking_slot_id = db.Column(db.Integer, db.ForeignKey('booking_slots.id', name='fk_waitinglist_booking_slot_id'))
+    requested_date = db.Column(db.Date, index=True)
+    added_on = db.Column(db.DateTime, default=datetime.utcnow)
+    seating = db.relationship('Seating', backref=db.backref('waiting_list', lazy='dynamic'))
+    booking_slot = db.relationship('Booking_slots', backref=db.backref('waiting_list', lazy='dynamic'))
+    
+    def __repr__(self):
+        return f'<WaitingList Customer: {self.customer_name}, Seating ID: {self.seating_id}, Slot ID: {self.booking_slot_id}>'
 
 def add_booking(capacity_needed, booking_slot_id, customer_name, customer_number):
     """
