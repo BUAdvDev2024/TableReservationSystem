@@ -78,7 +78,7 @@ class WaitingList(db.Model):
     def __repr__(self):
         return f'<WaitingList Customer: {self.customer_name}, Seating ID: {self.seating_id}, Slot ID: {self.booking_slot_id}>'
 
-def add_booking(seating_id: int, booking_slot_id: int, guests) -> Optional[str]:
+def add_booking(capacity_needed, booking_slot_id, customer_name, customer_number):
     """
     Add a booking by associating a seating with a booking slot.
 
@@ -87,37 +87,36 @@ def add_booking(seating_id: int, booking_slot_id: int, guests) -> Optional[str]:
     :return: A message indicating success or error.
     """
     session = db.session
-    try:
+    possible_seating = Seating.query.filter_by(capacity=capacity_needed).all()
+    booked = False
+    for table in possible_seating:
+        if not booked:
+            try:
+                booking_slot = session.query(Booking_slots).filter_by(id=booking_slot_id).one()
+                existing_booking = bookings.query.filter_by(seating_id=table.id, booking_slots_id=booking_slot.id).first()
 
-        existing_booking = session.execute(
-            sa.select([bookings])
-            .where(bookings.c.seating_id == seating_id)
-            .where(bookings.c.booking_slots_id == booking_slot_id)
-        ).first()
+                if existing_booking:
+                    return "Duplicate booking: This seating and booking slot combination already exists."
 
-        if existing_booking:
-            return "Duplicate booking: This seating and booking slot combination already exists."
+                # Insert into the 'bookings' table
+                new_booking = bookings(seating_id=table.id, booking_slots_id=booking_slot.id, customer_name=customer_name, customer_number=customer_number)
+                db.session.add(new_booking)
+                db.session.commit()
+                booked = True
+                return "Booking successfully added."
 
-        # Retrieve the Seating and Booking_slots instances from the database
-        seating = session.query(Seating).filter_by(id=seating_id).one()
-        if seating.capacity < guests:
-            return "There are more guests than seats at the table"
-        booking_slot = session.query(Booking_slots).filter_by(id=booking_slot_id).one()
+            except NoResultFound:
+                session.rollback()
+                return "Error: Seating or Booking Slot not found."
 
-        # Insert into the 'bookings' table
-        stmt = bookings.insert().values(seating_id=seating.id, booking_slots_id=booking_slot.id)
-        session.execute(stmt)
-        session.commit()
+            except Exception as e:
+                session.rollback()
+                return f"Error occurred: {str(e)}"
 
-        return "Booking successfully added."
-
-    except NoResultFound:
-        session.rollback()
-        return "Error: Seating or Booking Slot not found."
-
-    except Exception as e:
-        session.rollback()
-        return f"Error occurred: {str(e)}"
+    if booked:
+        return True
+    else:
+        return False
 
 
 def generate_time_slots_for_day(day: datetime):

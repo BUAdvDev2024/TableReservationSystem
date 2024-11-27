@@ -3,11 +3,14 @@ from wtforms import StringField, DateField, TimeField, IntegerField,PasswordFiel
 from wtforms.fields.choices import SelectField
 from wtforms.validators import DataRequired, Length, NumberRange
 from app.models import Restaurant
+from app import app
+
 
 class ReservationForm(FlaskForm):
     date = DateField('Date', format='%Y-%m-%d', validators=[DataRequired()])
     time = TimeField('Time', format='%H:%M', validators=[DataRequired()])
-    location = SelectField('Restaurant location', choices=[])
+    with app.app_context():
+        location = SelectField('Restaurant location', choices=[(r.id, r.name) for r in Restaurant.query.order_by(Restaurant.id)])
     party_size = IntegerField('Party Size', validators=[DataRequired(), NumberRange(min=1, max=20)])
     customer_name = StringField('Name', validators=[Length(max=100)])
     customer_phone = StringField('Phone', validators=[Length(max=15)])
