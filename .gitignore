@@ -1,1 +1,12 @@
-**/__pycache__/
+__pycache__/
+app/__pycache__/__init__.cpython-312.pyc
+app/__pycache__/config.cpython-312.pyc
+app/__pycache__/forms.cpython-312.pyc
+app/__pycache__/models.cpython-312.pyc
+app/__pycache__/routes.cpython-312.pyc
+migrations/__pycache__/env.cpython-312.pyc
+migrations/versions/328d3bcc73c3_.py
+migrations/versions/839ec7e9329b_.py
+migrations/versions/__pycache__/9d6a4e504a07_.cpython-312.pyc
+migrations/versions/__pycache__/46c2d1d74c25_initial_commit.cpython-312.pyc
+migrations/versions/__pycache__/664b8f4d079a_.cpython-312.pyc
