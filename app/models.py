@@ -31,6 +31,14 @@ class Booking_slots(db.Model):
     def __repr__(self):
         return f'<BookingSlot {self.date} {self.start_time} - {self.end_time}>'
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "date": datetime.strftime(self.date, "%d-%m-%Y"),
+            "start_time": self.start_time.strftime("%H:%M:%S"),
+            "end_time": self.end_time.strftime("%H:%M:%S"),
+        }
+
 class Restaurant(db.Model):
 
     id: so.Mapped[int] = so.mapped_column(primary_key=True)
