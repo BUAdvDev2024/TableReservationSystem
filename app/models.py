@@ -39,8 +39,8 @@ class Booking_slots(db.Model):
             "end_time": self.end_time.strftime("%H:%M:%S"),
         }
 
-class Restaurant(db.Model):
 
+class Restaurant(db.Model):
     id: so.Mapped[int] = so.mapped_column(primary_key=True)
     name: so.Mapped[str] = so.mapped_column(sa.String(100), index=True, unique=True)
     address: so.Mapped[str] = so.mapped_column(sa.String(255), index=True)
@@ -68,11 +68,11 @@ class bookings(db.Model):
 
     def __repr__(self):
         return f'<Booking: Seating ID {self.seating_id}, Slot ID {self.booking_slots_id}>'
-    
-    
+
+
 class WaitingList(db.Model):
     __tablename__ = 'waiting_list'
-    
+
     id = db.Column(db.Integer, primary_key=True)
     customer_name = db.Column(db.String(100), nullable=False)
     customer_number = db.Column(db.String(20), nullable=False)
@@ -82,11 +82,12 @@ class WaitingList(db.Model):
     added_on = db.Column(db.DateTime, default=datetime.utcnow)
     seating = db.relationship('Seating', backref=db.backref('waiting_list', lazy='dynamic'))
     booking_slot = db.relationship('Booking_slots', backref=db.backref('waiting_list', lazy='dynamic'))
-    
+
     def __repr__(self):
         return f'<WaitingList Customer: {self.customer_name}, Seating ID: {self.seating_id}, Slot ID: {self.booking_slot_id}>'
 
-def add_booking(capacity_needed, booking_slot_id, customer_name, customer_number):
+
+def add_booking(capacity_needed, booking_date, booking_time, customer_name, customer_number, restaurant):
     """
     Add a booking by associating a seating with a booking slot.
 
@@ -95,19 +96,21 @@ def add_booking(capacity_needed, booking_slot_id, customer_name, customer_number
     :return: A message indicating success or error.
     """
     session = db.session
-    possible_seating = Seating.query.filter_by(capacity=capacity_needed).all()
+    possible_seating = Seating.query.filter(Seating.capacity>=capacity_needed, Seating.restaurant_id==restaurant).all()
     booked = False
     for table in possible_seating:
         if not booked:
             try:
-                booking_slot = session.query(Booking_slots).filter_by(id=booking_slot_id).one()
-                existing_booking = bookings.query.filter_by(seating_id=table.id, booking_slots_id=booking_slot.id).first()
+                booking_slot = session.query(Booking_slots).filter_by(date=booking_date, time=booking_time).one()
+                existing_booking = bookings.query.filter_by(seating_id=table.id,
+                                                            booking_slots_id=booking_slot.id).first()
 
                 if existing_booking:
                     return "Duplicate booking: This seating and booking slot combination already exists."
 
                 # Insert into the 'bookings' table
-                new_booking = bookings(seating_id=table.id, booking_slots_id=booking_slot.id, customer_name=customer_name, customer_number=customer_number)
+                new_booking = bookings(seating_id=table.id, booking_slots_id=booking_slot.id,
+                                       customer_name=customer_name, customer_number=customer_number)
                 db.session.add(new_booking)
                 db.session.commit()
                 booked = True
@@ -142,7 +145,6 @@ def generate_time_slots_for_day(day: datetime):
 
 
 def populate_booking_slots(start_date: datetime, num_days: int = 1):
-    """Populate booking slots for multiple days, starting from `start_date`."""
     for day_offset in range(num_days):
         current_day = start_date + timedelta(days=day_offset)
         slots = generate_time_slots_for_day(current_day)
@@ -157,6 +159,7 @@ def populate_booking_slots(start_date: datetime, num_days: int = 1):
 
     # Commit the slots to the database
     db.session.commit()
+
 
 def add_test_restaurant_and_restaurant_data():
     restaurants_data = [
@@ -175,11 +178,12 @@ def add_test_restaurant_and_restaurant_data():
     for capacity in seating_capacities:
         # Create a new Seating instance
         random_restaurant_id = random.choice(restaurant_ids).id
-        seating = Seating(capacity=capacity,restaurant_id=random_restaurant_id,table_number=random.randint(0,100))
+        seating = Seating(capacity=capacity, restaurant_id=random_restaurant_id, table_number=random.randint(0, 100))
 
         # Add the seating to the session
 
         db.session.add(seating)
+
 
 def add_test_seating_data():
     # Create a list of seating capacities ranging from 2 to 8
@@ -188,7 +192,7 @@ def add_test_seating_data():
     for capacity in seating_capacities:
         # Create a new Seating instance
         random_restaurant_id = random.choice(restaurant_ids)[0]
-        seating = Seating(capacity=capacity,restaurant_id=random_restaurant_id)
+        seating = Seating(capacity=capacity, restaurant_id=random_restaurant_id)
 
         # Add the seating to the session
 
